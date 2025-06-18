@@ -1,0 +1,81 @@
+# Taps
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "bramstein/webfonttools"
+
+# Core utilities
+brew "coreutils"
+brew "moreutils"
+brew "findutils"
+brew "gnu-sed"
+brew "bash"
+brew "bash-completion2"
+brew "wget"
+brew "gnupg"
+
+# macOS tools
+brew "grep"
+brew "openssh"
+brew "screen"
+brew "php"
+brew "gmp"
+
+# Font tools
+brew "sfnt2woff"
+brew "sfnt2woff-zopfli"
+brew "woff2"
+
+
+
+# Useful binaries
+brew "ack"
+brew "git"
+brew "git-lfs"
+brew "gs"
+brew "imagemagick"
+brew "lua"
+brew "lynx"
+brew "p7zip"
+brew "pigz"
+brew "pv"
+brew "rename"
+brew "rlwrap"
+brew "ssh-copy-id"
+brew "tree"
+brew "vbindiff"
+brew "zopfli"
+brew "z"
+brew "zplug"
+
+# Development tools
+brew "deno"
+brew "diffutils"
+brew "ffmpeg"
+brew "gh"
+brew "eza"
+brew "gifsicle"
+brew "git-delta"
+brew "jq"
+brew "optipng"
+brew "pkgconf"
+brew "pnpm"
+brew "ripgrep"
+brew "yq"
+
+# Casks
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "firefox"
+cask "firefox-developer-edition"
+cask "firefox-nightly"
+cask "alfred"
+cask "brave-browser"
+cask "disk-inventory-x"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "ghostty"
+cask "imageoptim"
+cask "rectangle"
+cask "vlc"
+cask "docker"

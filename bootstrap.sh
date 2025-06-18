@@ -15,9 +15,8 @@ function doIt() {
 
 	# Check if running on macOS
 	if [[ "$OSTYPE" == "darwin"* ]]; then
-		echo "Running on macOS, executing brew.sh and .macos..."
-		./.macos
-		./brew.sh
+		echo "Running on macOS, installing Homebrew packages..."
+		brew bundle
 	fi
 
 	#install nvm
@@ -30,9 +29,15 @@ function doIt() {
 	nvm alias default 20
 
 	#install zplug
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+	curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
 	source ~/.zshrc;
+
+	# Run .macos script if on macOS
+	if [[ "$OSTYPE" == "darwin"* ]]; then
+		echo "Would you like to run the macOS configuration script? This will close some applications and may require a restart. (y/n)"
+		read -q && ./.macos
+	fi
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
