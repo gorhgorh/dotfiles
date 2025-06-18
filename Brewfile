@@ -1,7 +1,4 @@
 # Taps
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/services"
 tap "bramstein/webfonttools"
 
 # Core utilities
@@ -22,11 +19,7 @@ brew "php"
 brew "gmp"
 
 # Font tools
-brew "sfnt2woff"
-brew "sfnt2woff-zopfli"
 brew "woff2"
-
-
 
 # Useful binaries
 brew "ack"
@@ -47,6 +40,7 @@ brew "vbindiff"
 brew "zopfli"
 brew "z"
 brew "zplug"
+brew "openjdk@21"
 
 # Development tools
 brew "deno"
@@ -64,11 +58,13 @@ brew "ripgrep"
 brew "yq"
 
 # Casks
+cask "1password"
+cask "1password-cli"
 cask "google-chrome"
-cask "google-chrome-canary"
+cask "google-chrome@canary"
 cask "firefox"
-cask "firefox-developer-edition"
-cask "firefox-nightly"
+cask "firefox@developer-edition"
+cask "firefox@nightly"
 cask "alfred"
 cask "brave-browser"
 cask "disk-inventory-x"
