@@ -146,3 +146,20 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+### my aliases
+
+alias ll='la'
+alias adbr='adb -d reverse tcp:8081 tcp:8081'
+
+## ytdl
+alias ytda='youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0'
+alias ytd='youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=$1"'
+alias yt='link=$(pbpaste); youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=$link"'
+alias yt='link=$(pbpaste); youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=$link"'
+alias ytp='link=$(pbpaste); yt-dlp -i --extract-audio --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=$link"'
+
+## tree
+alias tr='tree -a -LC 3  -I node_modules'
+
+alias glou="open /Volumes/video/data\ jmm/docs/le\ star\ ca\ trek/dlip && open /Applications/VLC.app"

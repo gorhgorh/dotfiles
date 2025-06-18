@@ -1,6 +1,10 @@
-# Mathias’s dotfiles
+# Mathias’s dotfiles, Gorhgorh's edtion
 
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+this is currently just a small edit for me, let's see if i go further, it is using zsh instead of bash so few things differs
+it also install node and zplug.
+
+bellow is Mathias's readme
+
 
 ## Installation
 
