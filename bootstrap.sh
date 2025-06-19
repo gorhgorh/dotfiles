@@ -37,6 +37,18 @@ function doIt() {
 	#install zplug (now in the Brewfile)
 	# curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
+	# Install Cursor configuration
+	echo "Installing Cursor configuration..."
+	mkdir -p ~/Library/Application\ Support/Cursor/User/
+	cp init/cursor/settings.json ~/Library/Application\ Support/Cursor/User/
+	cp init/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/
+
+	# Install Cursor extensions
+	echo "Installing Cursor extensions..."
+	while read extension; do
+		code --install-extension "$extension"
+	done < init/cursor/extensions.txt
+
 	source ~/.zshrc;
 
 	# Run .macos script if on macOS

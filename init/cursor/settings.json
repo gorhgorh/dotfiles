@@ -1,0 +1,33 @@
+{
+    "window.commandCenter": 1,
+    "gitlens.ai.model": "anthropic:claude-3-5-sonnet-latest",
+    "git.openRepositoryInParentFolders": "never",
+    "cSpell.userWords": [
+        "bitcode",
+        "canari",
+        "customised",
+        "diawi",
+        "gorhgorh",
+        "hitslop",
+        "optimise",
+        "salesrep",
+        "xcarchive"
+    ],
+    "cSpell.enabledFileTypes": {
+        "*": false,
+        "json": false
+    },
+    "cSpell.language": "en-GB, fr-Fr",
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/{info,lfs,logs,refs,objects}/**",
+        ".git/{index,*refs,*HEAD}",
+        ".vscode",
+        ".vscode-insiders",
+        "package.json"
+    ],
+    "application.shellEnvironmentResolutionTimeout": 30,
+    "explorer.confirmDelete": false
+}
