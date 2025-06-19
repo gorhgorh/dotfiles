@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-cd "$(dirname "${(%):-%x}")";
+cd "$(dirname "$0")";
 
 git pull origin main;
 
@@ -16,6 +16,12 @@ function doIt() {
 	# Check if running on macOS
 	if [[ "$OSTYPE" == "darwin"* ]]; then
 		echo "Running on macOS, installing Homebrew packages..."
+		if test ! $(which brew); then
+			echo "Installing homebrew..."
+			ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		fi
+		
+		brew update
 		brew bundle
 	fi
 

@@ -73,9 +73,6 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history # share command history data
 
-# load Z
-. ~/z/z.sh
-
 # dirs
 setopt auto_cd
 setopt auto_pushd
@@ -128,6 +125,9 @@ export NVM_DIR="$HOME/.nvm"
 # java21
 export JAVA_HOME="/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
 export PATH="$JAVA_HOME/bin:$PATH"
+
+# z.sh
+. /opt/homebrew/etc/profile.d/z.sh
 
 # Source p10k configuration at the end
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
