@@ -28,8 +28,8 @@ function doIt() {
 	nvm install 20
 	nvm alias default 20
 
-	#install zplug
-	curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+	#install zplug (now in the Brewfile)
+	# curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
 	source ~/.zshrc;
 
